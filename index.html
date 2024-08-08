@@ -34,6 +34,11 @@
   }
 
   @font-face {
+    font-family: 'Roboto-Light';
+    src: url('fonts/Roboto/Roboto-Light.ttf') format('truetype');
+  }
+
+  @font-face {
     font-family: 'Roboto-Condensed';
     src: url('fonts/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
   }
@@ -41,6 +46,7 @@
   body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    /* display: flex; */
   }
 
   #spaceholder {
@@ -70,19 +76,39 @@
     padding-left: 9%;
   }
 
+  .school {
+    padding-top: 1%;
+    margin-left: -2%;
+  }
+
   nav,
   #publications,
-  #talks {
+  #talks,
+  #education {
     font-family: 'Roboto-Medium', sans-serif;
   }
 
   #publications,
-  #talks {
+  #talks,
+  #education {
     margin-top: 5%;
   }
 
   #email {
     font-family: 'Roboto-bold', sans-serif;
+  }
+
+  footer {
+    background-color: #333;
+    color: #999;
+    text-align: center;
+    padding: 10px 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 12px;
   }
 </style>
 
@@ -141,11 +167,28 @@
           <p>Hi there!</p>
           <p>My name is Haoyu (Richard) Zhuang, a second-year graduate student studying tropical weather at the
             University of
-            Washington under the advisory of Professor Shuyi Chen.
+            Washington under the advisory of <a href="https://orca.atmos.washington.edu/">Shuyi Chen</a>.
           </p>
-          <p>I am broadly interested tropical weather and
+          <p>I am broadly interested in tropical weather and
             climate, weather-climate continuum, and machine learning.</p>
           <p>I am currently working on the multiscale variability of the Atlantic ITCZ.</p>
+        </div>
+
+        <div class="col">
+          <h3 id="education">Education</h3>
+          <ul>
+            <li class="school">
+              <p>Ph.D. Student at the University of Washington, 2023 - current <br />
+                Department of Atmospheric and Climate Science <br />
+                Advisor: <a href="https://orca.atmos.washington.edu/">Shuyi Chen</a></p>
+            </li>
+            <li class="school">
+              <p>B.S. at Cornell University, 2019 - 2023 <br />
+                Double major in Atmospheric Science and Information Science <br />
+                Advisors: <a href="https://scholar.google.com/citations?hl=en&user=N9Wnih0AAAAJ">Arthur DeGaetano</a>, <a href="https://flaviolehner.eas.cornell.edu/">Flavio Lehner</a></p>
+            </li>
+          </ul>
+
         </div>
 
         <!-- Publications -->
@@ -169,13 +212,16 @@
               Random Forest", eLightning.</li>
           </ol>
         </div>
+
       </div>
 
     </div>
 
   </div>
   <!-- /.container -->
-
+  <footer id="attribution">This website is adapted from <a href="https://github.com/mavroudisv/plain-academic">Plain
+      Academic</a>. An edited template can be found <a href="https://github.com/Z-Richard/z-richard.github.io">here</a>.
+  </footer>
 </body>
 
 </html>
